@@ -1,0 +1,58 @@
+<?php
+$ADbody = '<div class="container-header" style="width: 540px;margin: 20px auto;">'     
+        .'<div class="header-cont">'
+	        .'<div class="icon"><i class="fa fa-bar-chart"></i> Stats </div>'
+	        .'<div class="title-in">Statistics of the Day</div>'
+		.'</div>'					
+	.'</div>'
+	
+    .'<div class="container-stats" style="width: 90%;background: white;margin: 20px auto;border-radius: 2px;box-shadow: 0 0 2px rgba(0,0,0,0.12),0 2px 4px rgba(0,0,0,0.24);padding: 0px;">'
+        .'<div class="cont-stats" style="width: 33.33%;text-align: center;padding: 10px 0;border-right: 2px solid #00B8FF;height: 52px;background: none;margin:0px;">'        
+            .@$zdkCore->get_visit_delay()
+		    .'<br>Page Views'  
+        .'</div>'
+        .'<div class="cont-stats" style="width: 32.50%;text-align: center;padding: 10px 0;border-right: 2px solid #00B8FF;height: 52px;background: none;margin:0px;">'
+	        .@$zdkCore->get_unic_visit_delay()
+            .'<br>Visitors'
+        .'</div>'
+        .'<div class="cont-stats" style="width: 33.33%;text-align: center;padding: 10px 0;float: right;height: 52px;background: none;margin:0px;">'
+	        .@$zdkCore->get_pais_delay()
+            .'<br>Top Countries'
+        .'</div>'
+    .'</div>'
+
+    .'<div class="table_row">'
+	    .'<table>'
+	        .'<tr class="head"><td>Pays</td><td>Visites</td><td>Percentages</td></tr>'
+	        .@$zdkCore->get_table_pais_delay()
+	    .'</table>'
+	.'</div>'
+	
+	.'<div class="container-header" style="width: 540px;margin: 20px auto;">'     
+        .'<div class="header-cont">'
+	        .'<div class="icon"><i class="fa fa-bar-chart"></i> Stats </div>'
+	        .'<div class="title-in">Global Statistics</div>'
+		.'</div>'					
+	.'</div>'
+    
+    .'<div class="container-stats" style="width: 90%;background: white;margin: 20px auto;border-radius: 2px;box-shadow: 0 0 2px rgba(0,0,0,0.12),0 2px 4px rgba(0,0,0,0.24);padding: 0px;">'
+        .'<div class="cont-stats" style="width: 33.33%;text-align: center;padding: 10px 0;border-right: 2px solid #00B8FF;height: 52px;background: none;margin:0px;">'        
+            .@$zdkCore->get_visit_total()
+		    .'<br>Page Views'  
+        .'</div>'
+        .'<div class="cont-stats" style="width: 32.50%;text-align: center;padding: 10px 0;border-right: 2px solid #00B8FF;height: 52px;background: none;margin:0px;">'
+	        .@$zdkCore->get_unic_visit_total()
+            .'<br>Visitors'
+        .'</div>'
+        .'<div class="cont-stats" style="width: 33.33%;text-align: center;padding: 10px 0;float: right;height: 52px;background: none;margin:0px;">'
+	        .@$zdkCore->get_pais_total()
+            .'<br>Top Countries'
+        .'</div>'
+    .'</div>'
+	
+    .'<div class="table_row">'
+	    .'<table>'
+	        .'<tr class="head"><td>Pays</td><td>Visites</td><td>Percentages</td></tr>'
+	        .@$zdkCore->get_table_pais()
+	    .'</table>'
+	.'</div>';
